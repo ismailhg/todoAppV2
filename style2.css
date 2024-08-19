@@ -394,7 +394,8 @@ h3 {
     }
 
     .todoInput {
-        width: 65%;;
+        width: 65%;
+        margin-left: 1%;
     }
 
     .date{
