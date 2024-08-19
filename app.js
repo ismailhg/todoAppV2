@@ -22,6 +22,7 @@ dropdownButton.addEventListener('click', () => {
 
 filterLi.forEach(function (filterLi) {
     filterLi.addEventListener('click', function (e) {
+        e.preventDefault();
         const sectionId = filterLi.getAttribute('href').substring(1);
         showSection(sectionId);
     });
@@ -294,10 +295,10 @@ function checkEmptySections() {
     });
 }
 
-function showSection(id) {
+function showSection(sectionId) {
     sections.forEach(section => {
-        if (section.id === id) {
-            section.style.display = 'block';
+        if (section.classList.contains(sectionId)) {
+            section.style.display = 'flex';
         } else {
             section.style.display = 'none';
         }
