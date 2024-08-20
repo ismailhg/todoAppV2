@@ -418,6 +418,11 @@ h3 {
         left: 6%;
     }
 
+    .dropdown-menu{
+        margin-top: 1vh;
+        margin-right: 22.5vh;
+    }
+
     .notification{
         position: fixed;
         font-size: 15.3px;
@@ -434,7 +439,7 @@ h3 {
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 429px) {
 
     body{
         padding: 10px;
@@ -470,7 +475,7 @@ h3 {
     
     .completedSection, .deletedSection{
         width: 100%;
-        margin-top: 7vh;
+        margin-top: 10vh;
         margin-left: 0;
         margin-right: 0;
         padding: 1px;
