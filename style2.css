@@ -464,7 +464,7 @@ h3 {
 
     .todoSection{
         width: 100%;
-        margin-top: 16vh;
+        margin-top: 17vh;
         margin-left: 0;
         margin-right: 0;
         padding: 1px;
@@ -475,7 +475,7 @@ h3 {
     
     .completedSection, .deletedSection{
         width: 100%;
-        margin-top: 10vh;
+        margin-top: 15vh;
         margin-left: 0;
         margin-right: 0;
         padding: 1px;
