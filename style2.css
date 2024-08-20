@@ -53,6 +53,10 @@ body {
     transition-duration: 300ms;
 }
 
+.fa-house{
+    color: white;
+}
+
 .bigTitle{
     margin-top: 12px;
     font-size: 60px;
@@ -217,18 +221,22 @@ h3 {
 
 .dropdown-button {
     position: absolute;
+    top: 10px;
+    right: 10px;
     border: none;
     cursor: pointer;
     background-color: transparent;
     font-size: 22px;
     color: #fff;
+    
 }
 
 .dropdown-menu {
     position: absolute;
     font-size: 14px;
     padding: 10px 0;
-    margin-top: 5.5vh;
+    margin-top: 6.5vh;
+    right: 0vh;
     display: none;
     background-color: #92488e;
     z-index: 1;
@@ -381,7 +389,7 @@ h3 {
     
     .completedSection, .deletedSection{
         width: 100%;
-        margin-top: 7vh;
+        margin-top: 10vh;
         margin-left: 0;
         margin-right: 0;
         padding: 1px;
