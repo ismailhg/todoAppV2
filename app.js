@@ -8,7 +8,6 @@ const dropdownMenu = document.querySelector('.dropdown-menu');
 const sections = document.querySelectorAll('section');
 const filterLi = document.querySelectorAll('li > a');
 
-
 document.addEventListener("DOMContentLoaded", () => {
     localStorageUi();
     checkEmptySections();
@@ -25,6 +24,7 @@ filterLi.forEach(function (filterLi) {
         e.preventDefault();
         const sectionId = filterLi.getAttribute('href').substring(1);
         showSection(sectionId);
+        dropdownMenu.classList.remove('show');
     });
 });
 
@@ -241,7 +241,7 @@ function createEditButton(li) {
         editBtn.onclick = function () {
             task.status = "pending";
             saveToLocalStorage();
-            checkEmptySections(); // Görev geri alındığında kontrol et
+            checkEmptySections();
         };
     }
     return editBtn;
